@@ -1,0 +1,228 @@
+/* Body Design */
+#body-content {
+    width: auto;
+    height: auto;
+    border: 2px solid rgb(182, 181, 181);
+    border-radius: 20px;
+}
+body {
+    background-image: linear-gradient(to right, pink, white, pink);
+}
+
+/* Elements in Header */
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_2>p {
+    color: rgb(6, 197, 6);
+    font-weight: 900;
+    font-family: 'Arial Black';
+    margin: 5px;
+}
+.container_3>p {
+    margin: 0px;
+}
+
+.container_3 a {
+    background-color: rgb(92, 91, 91);
+    color: white;
+    transition: background-color, color, 1s;
+}
+
+.container_3 a:hover {
+    background-color: rgb(212, 193, 193);
+    color: rgb(92, 91, 91);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Body Elements */
+div.body {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 30px 20px 30px 50px;
+}
+
+h4 {
+    color: rebeccapurple;
+    font-size: 30px;
+    font-family: 'Arial Black';
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+/* Side bar */
+aside {
+    width: 300px;
+}
+
+aside p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+/* Vertical stripe */
+div.vertical-stripe {
+    width: 40px;
+    height: auto;
+    background-color: rgb(6, 197, 6);
+    margin: 80px 50px 0px;
+    display: none;
+}
+
+/* Main Section */
+main {
+    overflow-wrap: break-word;
+}
+
+main p.sub_1 {
+    font-weight: bold;
+}
+
+/* Responsiveness */
+@media (min-width: 1025px) {
+    div.vertical-stripe {
+        display: block;
+    }
+    .container_2>p {
+        font-size: 60px;
+    }
+    #header-element{
+        margin-left: 10vw;
+    }
+    .container_3{
+        font-size: 18px;
+        top: 60px;
+        right: 30px;
+    }
+    .container_3 a {
+        margin: 2px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .container_3 p {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 1020px) and (max-width: 1024px){
+    .container_2>p {
+        font-size: 60px;
+    }
+    #header-element{
+        margin-left: 10vw;
+    }
+    .container_3{
+        font-size: 18px;
+        top: 60px;
+        right: 30px;
+    }
+    .container_3 a {
+        margin: 2px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .container_3 p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1020px){
+    .container_2>p {
+        font-size: 60px;
+    }
+    .container_3 p {
+        margin-bottom: 5px;
+    }
+    .container_3{
+        font-size: 18px;
+        top: 90px;
+        right: 30px;
+    }
+    .container_3 a {
+        margin: 2px;
+        padding: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (min-width: 500px) and (max-width:767px) {
+    .container_2>p {
+        font-size: 40px;
+    }
+    .container_3 p{
+        margin-bottom: 2px;
+    }
+    .container_2 {
+        align-items: flex-start;
+    }
+    .container_3 {
+        font-size: 15px;
+        top: 50px;
+        right: 30px;
+    }
+    .container_3 a {
+        margin: 2px;
+        padding: 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .container_2>p {
+        font-size: 25px;
+    }
+    .container_2 {
+        align-items: flex-start;
+    }
+    .container_3 {
+        font-size: 12px;
+        top: 25px;
+        right: 20px;
+    }
+    .container_3 a {
+        margin: 2px;
+        padding: 5px;
+        border-radius: 6px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    .container_2>p {
+        font-size: 20px;
+    }
+    .container_2 {
+        align-items: flex-start;
+    }
+    .container_3 {
+        font-size: 10px;
+        top: 20px;
+        right: 20px;
+    }
+    .container_3 a {
+        font-size: 10px;
+        margin: 3px;
+        padding: 4px;
+        border-radius: 6px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    ul {
+        padding-inline-start: 25px;
+    }
+}
+
+.container_3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Times New Roman';
+}
